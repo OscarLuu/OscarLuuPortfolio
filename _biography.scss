@@ -1,0 +1,79 @@
+.bioBackground {
+  padding-top: 50px;
+  margin-top: 300px;
+  background-color: $gray-color;
+  padding-bottom: 200px;
+  .centerText{
+    @include title-font;
+    color: $text-color;
+    padding-bottom: 50px;
+  }
+}
+
+.profilepicture {
+  margin-left: 5%;
+  height: auto;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px 1px;
+  color: $text-color;
+}
+
+.bio {
+  @include basic-font;
+  width: 80%;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px 1px;
+  margin-left: 10%;
+  margin-right: 50%;
+  color: $text-color;
+  padding: 20px 20px 20px 20px;
+  text-align: left;
+}
+
+div {
+  h1.fading {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+  }
+  div {
+    div.fading {
+      img {
+        visibility: hidden;
+        transition: all 1s ease-in-out;
+        opacity: 0;
+        transform: translate3d(-200px,0,0)
+      }
+    }
+    div.fading{
+      p {
+        visibility: hidden;
+        transition: all 1s ease-in-out;
+        opacity: 0;
+        transform: translate3d(200px,0,0)
+      }
+    }
+  }
+}
+
+div h1.fadeIn{
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+}
+
+
+div div div.fadeIn img {
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+}
+
+div div div.fadeIn p {
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Oscar Luu</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Roboto:100,300,400" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="typed.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</head>
+<body class="background-color">
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-nav sticky-top">
+        <div class="row" id="home">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about" id="gotoAbout">About</a></li>
+                <li><a href="#experience" id="gotoExperience">Experience</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Typewriter effect -->
+    <div class="intro">
+        <div>
+            <div>
+            <p class="bland">Hi, I'm </p>
+                <p class="tiffanyblue"> Oscar Luu<p class="period">.</p></p>
+            </div>
+            <p class="bland type"></p>
+        </div>
+    </div>
+
+    <!-- Floating caret pointing to about -->
+    <div class="floatingCaret">
+        <a href="#about" class="caret" id="gotoAbout2"><span>v</span></a>
+    </div>
+
+    <!-- Biography -->
+    <div id="about" class="bioBackground">
+        <h1 class="centerText fading">About Me</h1>
+            <div class="row">
+                <div class="col fading">
+                    <img src="myFace.jpg" class="profilepicture">
+                </div>
+                <div class="col fading">
+                    <p class="bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
+    </div>
+
+    <!--Experience Timeline -->
+
+    <h1 class="centerText fading" id="experience">Experience</h1>
+    <section class="timeline">
+        <ul>
+            <li class="fading">
+                <div>
+                    <p>2018 - Present</p>
+                    <p>San Jose State University <img src="sjsuLogo.png" class="inline sjsu"></p>
+                    <p class="subfont">Master's of Science in Human Factors/Ergonomics Human-Computer Interaction Emphasis</p>
+                </div>
+            </li>
+            <li class="fading">
+                <div>
+                    <p>August 2017 - Present</p>
+                    <p>NASA Ames Research Center<img src="nasaLogo.png" class="inline nasa"></p>
+                    <p class="subfont">Senior Technical Analyst</p>
+                </div>
+            </li>
+            <li class="fading">
+                <div>
+                    <p>June 2017 - August 2017</p>
+                    <p>NASA Ames Research Center<img src="nasaLogo.png" class="inline nasa"></p>
+                    <p class="subfont">Control Room Analyst Intern</p>
+                </div>
+            </li>
+            <li class="fading">
+                <div>
+                    <p>January 2017 -  June 2017</p>
+                    <p>HS2 Academy<img src="hs2.jpeg" class="inline hs2"></p>
+                    <p class="subfont">IT Desktop Support</p>
+                </div>
+            </li>
+            <li class="fading">
+                <div>
+                    <p>2014 - 2018</p>
+                    <p>San Jose State University<img src="sjsuLogo.png" class="inline sjsu"></p>
+                    <p class="subfont">Bachelor's of Science in Information Systems and Computer Science</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Portfolio Showcase -->
+    <div class="projectBackground">
+        <h1 class="centerText fading">Projects</h1>
+    </div>
+</body>
+</html>

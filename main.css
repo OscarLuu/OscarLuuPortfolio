@@ -1,0 +1,241 @@
+/* ---------Mixin-------- */
+nav {
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 25px; }
+  nav div ul li {
+    display: inline-block;
+    margin-right: 20px;
+    margin-left: 20px; }
+    nav div ul li a {
+      color: #616366; }
+    nav div ul li a:hover {
+      color: #81D8D0;
+      text-decoration: none; }
+
+div {
+  text-align: center;
+  padding-top: 20px; }
+  div div div .bland {
+    font-size: 45px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    display: inline;
+    color: #616366; }
+  div div div .tiffanyblue {
+    font-size: 45px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    display: inline;
+    color: #81D8D0;
+    white-space: pre; }
+  div div .type {
+    font-size: 45px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    color: #616366;
+    display: inline; }
+
+.period {
+  font-size: 45px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  color: #616366;
+  display: inline; }
+
+.typed-cursor {
+  font-size: 45px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  color: #616366; }
+
+.caret {
+  font-size: 35px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  color: #81D8D0;
+  display: block;
+  position: relative;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto; }
+
+.caret:hover {
+  color: #616366;
+  text-decoration: none; }
+
+div .bland {
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 25px;
+  color: #81D8D0; }
+
+div.intro {
+  margin-bottom: 10%; }
+
+.bioBackground {
+  padding-top: 50px;
+  margin-top: 300px;
+  background-color: #f9f9f9;
+  padding-bottom: 200px; }
+  .bioBackground .centerText {
+    font-size: 45px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    color: #616366;
+    padding-bottom: 50px; }
+
+.profilepicture {
+  margin-left: 5%;
+  height: auto;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px 1px;
+  color: #616366; }
+
+.bio {
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  width: 80%;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px 1px;
+  margin-left: 10%;
+  margin-right: 50%;
+  color: #616366;
+  padding: 20px 20px 20px 20px;
+  text-align: left; }
+
+div h1.fading {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 1s ease-in-out; }
+div div div.fading img {
+  visibility: hidden;
+  transition: all 1s ease-in-out;
+  opacity: 0;
+  transform: translate3d(-200px, 0, 0); }
+div div div.fading p {
+  visibility: hidden;
+  transition: all 1s ease-in-out;
+  opacity: 0;
+  transform: translate3d(200px, 0, 0); }
+
+div h1.fadeIn {
+  transform: none;
+  visibility: visible;
+  opacity: 1; }
+
+div div div.fadeIn img {
+  transform: none;
+  visibility: visible;
+  opacity: 1; }
+
+div div div.fadeIn p {
+  transform: none;
+  visibility: visible;
+  opacity: 1; }
+
+.timeline {
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100; }
+  .timeline ul li {
+    list-style-type: none;
+    position: relative;
+    width: 3px;
+    margin: 0 50%;
+    padding-top: 10px;
+    background: #616366; }
+    .timeline ul li div {
+      line-height: 100%;
+      position: relative;
+      bottom: 110px;
+      width: 400px;
+      padding: 15px 15px 15px 15px;
+      background: #f9f9f9;
+      opacity: 0;
+      transition: all 1s ease-in-out;
+      visibility: hidden;
+      border-radius: 5px;
+      box-shadow: 1px 1px 1px 1px;
+      text-align: left; }
+  .timeline ul li::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 170px;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: inherit;
+    transition: background 1s ease-in-out; }
+  .timeline ul li div {
+    margin-top: 100px;
+    left: 45px;
+    transform: translate3d(200px, 0, 0); }
+  .timeline ul li div::before {
+    left: -15px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent #d4f9f3 transparent transparent; }
+  .timeline ul li:nth-child(even) div {
+    left: -439px;
+    transform: translate3d(-200px, 0, 0); }
+  .timeline ul li:nth-child(even) div::before {
+    right: -15px;
+    border-width: 8px 0 8px 16px;
+    border-color: transparent transparent transparent #d4f9f3; }
+
+.timeline ul li.fadeIn div {
+  transform: none;
+  visibility: visible;
+  opacity: 1; }
+
+.centerText {
+  font-size: 45px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  color: #616366;
+  padding-bottom: 50px;
+  text-align: center;
+  padding-top: 50px; }
+
+.nasa {
+  width: 100%;
+  height: auto;
+  max-width: 50px;
+  margin-left: 40px;
+  display: inline; }
+
+.hs2 {
+  margin-left: 175px;
+  width: 100%;
+  height: auto;
+  max-width: 40px; }
+
+.sjsu {
+  margin-left: 25px;
+  width: 100%;
+  height: auto;
+  max-width: 100px; }
+
+.subfont {
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100; }
+
+.fading {
+  opacity: 0;
+  transition: all 1s ease-in-out;
+  visibility: hidden; }
+
+.fadeIn {
+  transform: none;
+  visibility: visible;
+  opacity: 1; }
+
+/*----------End Mixin-----------*/
+
+/*# sourceMappingURL=main.css.map */

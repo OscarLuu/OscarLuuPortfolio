@@ -1,0 +1,67 @@
+
+div {
+  @include center;
+  padding-top: 20px;
+  div {
+    div {
+      .bland {
+        @include body-font;
+        display: inline;
+        color: $text-color;
+      }
+      .tiffanyblue {
+        @include body-font;
+        display: inline;
+        color: #81D8D0;
+        white-space: pre;
+      }
+    }
+    .type {
+      @include body-font;
+      color: $text-color;
+      display: inline;
+    }
+  }
+}
+
+.period {
+  @include body-font;
+  color: $text-color;
+  display: inline;
+}
+
+.typed-cursor {
+  @include body-font;
+  color: $text-color;
+}
+
+
+.caret {
+  @include head-font;
+  color: $hover-color;
+  display: block;
+  position: relative;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.caret:hover {
+  color: $text-color;
+  text-decoration: none;
+}
+
+
+
+div {
+  .bland {
+    @include nav-font(25px);
+    color: $hover-color;
+  }
+}
+
+div.intro {
+  margin-bottom: 10%;
+}

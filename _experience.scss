@@ -1,0 +1,118 @@
+.timeline {
+  @include basic-font;
+  ul {
+    li {
+      // text boxes
+      div {
+        line-height: 100%;
+        position: relative;
+        bottom: 110px;
+        width: 400px;
+        padding: 15px 15px 15px 15px;
+        background: $gray-color;
+        opacity: 0;
+        transition: all 1s ease-in-out;
+        visibility: hidden;
+        border-radius: 5px;
+        box-shadow: 1px 1px 1px 1px;
+        text-align: left;
+      }
+      // Timeline Bar
+      list-style-type: none;
+      position: relative;
+      width: 3px;
+      margin: 0 50%;
+      padding-top: 10px;
+      background: $text-color;
+    }
+    li::after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      bottom: 170px;
+      transform: translateX(-50%);
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: inherit;
+      transition: background 1s ease-in-out;
+    }
+    li{
+      div {
+        margin-top: 100px;
+        left: 45px;
+        transform: translate3d(200px,0,0);
+      }
+      div::before {
+        left: -15px;
+        border-width: 8px 16px 8px 0;
+        border-color: transparent $background-color transparent transparent;
+      }
+    }
+    li:nth-child(even) {
+      div {
+        left: -439px;
+        transform: translate3d(-200px,0,0);
+      }
+      div::before {
+        right: -15px;
+        border-width: 8px 0 8px 16px;
+        border-color: transparent transparent transparent $background-color;
+      }
+    }
+}
+}
+
+
+.timeline ul li.fadeIn div {
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+}
+
+.centerText{
+  @include title-font;
+  color: $text-color;
+  padding-bottom: 50px;
+  text-align: center;
+  padding-top: 50px;
+}
+
+
+.nasa {
+  width: 100%;
+  height: auto;
+  max-width: 50px;
+  margin-left: 40px;
+  display: inline;
+}
+
+.hs2 {
+  margin-left: 175px;
+  width: 100%;
+  height: auto;
+  max-width: 40px;
+}
+
+.sjsu {
+  margin-left: 25px;
+  width: 100%;
+  height: auto;
+  max-width: 100px;
+}
+
+.subfont {
+  @include sub-font;
+}
+
+.fading {
+  opacity: 0;
+  transition: all 1s ease-in-out;
+  visibility: hidden;
+}
+
+.fadeIn {
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+}

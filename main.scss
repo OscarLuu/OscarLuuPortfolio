@@ -1,0 +1,57 @@
+$hover-color: #81D8D0;
+$text-color: #616366;
+$background-color: #d4f9f3;
+$gray-color: #f9f9f9;
+/* ---------Mixin-------- */
+@mixin border-radius($radius){
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin nav-font($font-size) {
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: $font-size;
+}
+
+@mixin center {
+  text-align: center;
+}
+
+@mixin body-font {
+  font-size: 45px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+}
+
+@mixin title-font {
+  font-size: 45px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+}
+
+@mixin basic-font {
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+}
+
+@mixin head-font {
+  font-size: 35px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+}
+
+@mixin sub-font {
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+}
+
+@import 'navbar';
+@import 'intro';
+@import 'biography';
+@import 'experience';
+
+/*----------End Mixin-----------*/
+

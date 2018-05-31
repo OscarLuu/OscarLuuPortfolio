@@ -1,0 +1,19 @@
+nav {
+  @include nav-font(25px);
+  div {
+    ul {
+      li {
+        display: inline-block;
+        margin-right: 20px;
+        margin-left: 20px;
+        a {
+          color: $text-color;
+        }
+        a:hover {
+          color: $hover-color;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

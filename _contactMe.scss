@@ -1,0 +1,14 @@
+.contactMe{
+  @include head-font;
+  color: $text-color;
+  margin-right: 25px;
+}
+
+.contactMe:hover {
+  color: $hover-color;
+  text-decoration: none;
+}
+
+.contact {
+  padding-bottom: 100px;
+}

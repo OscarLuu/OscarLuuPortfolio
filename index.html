@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Oscar Luu</title>
+    <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" type="text/css" href="main.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Roboto:100,300,400" rel="stylesheet">
@@ -11,8 +12,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="main.js"></script>
+    <script src="https://use.fontawesome.com/86a645828b.js"></script>
 </head>
-<body class="background-color">
+<body>
 
     <!-- Navigation Bar -->
     <nav class="navbar navbar-nav sticky-top">
@@ -21,7 +23,7 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about" id="gotoAbout">About</a></li>
                 <li><a href="#experience" id="gotoExperience">Experience</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#contact" id="gotoContact">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -50,8 +52,12 @@
                     <img src="myFace.jpg" class="profilepicture">
                 </div>
                 <div class="col fading">
-                    <p class="bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div>
+                    <div class="bio">
+                    <p>Hello there,</p>
+                    <p>I'm Oscar, full-time student pursuing my Master of Science in Computer Science. I graduated from San Jose State University with a Bachelor of Science in Information Systems and Computer Science.</p>
+                    <p>When I'm not at school, you will find me at NASA Ames Research Center where I work full-time as well helping researchers conduct studies using the Pleiades Supercomputer. I am well versed in Python and bash but my real passion is in Frontend Web Development and UI Design.</p>
+                    <p>With the time I have left I spend my time with my family, my girlfriend Estelle, my dog Lulu and copious amounts of food.</p>
+                    </div></div>
             </div>
     </div>
 
@@ -63,8 +69,8 @@
             <li class="fading">
                 <div>
                     <p>2018 - Present</p>
-                    <p>San Jose State University <img src="sjsuLogo.png" class="inline sjsu"></p>
-                    <p class="subfont">Master's of Science in Human Factors/Ergonomics Human-Computer Interaction Emphasis</p>
+                    <p>Santa Clara University <img src="scu.png" class="inline scu"></p>
+                    <p class="subfont">Master of Science in Computer Science</p>
                 </div>
             </li>
             <li class="fading">
@@ -92,7 +98,7 @@
                 <div>
                     <p>2014 - 2018</p>
                     <p>San Jose State University<img src="sjsuLogo.png" class="inline sjsu"></p>
-                    <p class="subfont">Bachelor's of Science in Information Systems and Computer Science</p>
+                    <p class="subfont">Bachelor of Science in Information Systems and Computer Science</p>
                 </div>
             </li>
         </ul>
@@ -100,7 +106,32 @@
 
     <!-- Portfolio Showcase -->
     <div class="projectBackground">
+        <div>
         <h1 class="centerText fading">Projects</h1>
+        </div>
+        <div>
+            <div class="row">
+                <div class="col fading randomQuote">
+                    <p data-height="469" data-theme-id="dark" data-slug-hash="oyjoxN" data-default-tab="result" data-user="OscarLuu" data-embed-version="2" data-pen-title="Daily UI Challenge #2 Basal Metabolic Rate" class="codepen">See the Pen <a href="https://codepen.io/OscarLuu/pen/oyjoxN/">Daily UI Challenge #2 Basal Metabolic Rate</a> by Oscar Luu (<a href="https://codepen.io/OscarLuu">@OscarLuu</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+                    <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+                </div>
+                <div class="col fading currentWeather">
+                    <p data-height="469" data-theme-id="dark" data-slug-hash="RMYjNK" data-default-tab="result" data-user="OscarLuu" data-embed-version="2" data-pen-title="Random Quote Machine" class="codepen">See the Pen <a href="https://codepen.io/OscarLuu/pen/RMYjNK/">Random Quote Machine</a> by Oscar Luu (<a href="https://codepen.io/OscarLuu">@OscarLuu</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+                    <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+                </div>
+                </div>
+        </div>
     </div>
+
+    <!-- Contact page -->
+    <div class="contact" id="contact">
+        <h1 class="centerText fading">Contact Me!</h1>
+        <div>
+        <i class="fa fa-envelope-o fa-2x" aria-hidden="true"><a href="mailto:oscarluu26@gmail.com" class="contactMe">E-mail</a></i>
+        <i class="fa fa-github-alt fa-2x" aria-hidden="true"><a href="https://github.com/OscarLuu" class="contactMe" target="_blank">GitHub</a></i>
+        <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"><a href="https://www.linkedin.com/in/oscarluu/" class="contactMe" target="_blank">LinkedIn</a></i>
+        </div>
+    </div>
+
 </body>
 </html>

@@ -43,6 +43,10 @@ $(function(){
         $('html,body').animate({ scrollTop: $("#experience").offset().top }, "slow");
         return false;
     });
+    $('#gotoContact').click(function () {
+        $('html,body').animate({ scrollTop: $("#contact").offset().top }, "slow");
+        return false;
+    });
     //In view fade in
     $(window).on('scroll',function() {
         $('.fading').each(function() {

@@ -14,7 +14,7 @@
         transition: all 1s ease-in-out;
         visibility: hidden;
         border-radius: 5px;
-        box-shadow: 1px 1px 1px 1px;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
         text-align: left;
       }
       // Timeline Bar
@@ -23,7 +23,8 @@
       width: 3px;
       margin: 0 50%;
       padding-top: 10px;
-      background: $text-color;
+      background: $hover-color;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     }
     li::after {
       content: '';
@@ -36,6 +37,7 @@
       border-radius: 50%;
       background: inherit;
       transition: background 1s ease-in-out;
+      box-shadow: 6px 0 20px rgba(0,0,0,0.19), -6px 0 20px rgba(0,0,0,0.23);
     }
     li{
       div {
@@ -82,7 +84,7 @@
 .nasa {
   width: 100%;
   height: auto;
-  max-width: 50px;
+  max-width: 60px;
   margin-left: 40px;
   display: inline;
 }
@@ -99,6 +101,13 @@
   width: 100%;
   height: auto;
   max-width: 100px;
+}
+
+.scu {
+  margin-left: 76px;
+  max-width: 55px;
+  width: 100%;
+  height: auto;
 }
 
 .subfont {

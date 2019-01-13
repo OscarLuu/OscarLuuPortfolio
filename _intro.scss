@@ -37,7 +37,8 @@ div {
 
 
 .caret {
-  @include head-font;
+  font-family: 'Julius Sans One', san-serif;
+  font-size: 200%;
   color: $hover-color;
   display: block;
   position: relative;
